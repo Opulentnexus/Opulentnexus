@@ -6,32 +6,213 @@
   <title>Figma-style Landing Page</title>
   <link rel="stylesheet" href="styles.css" />
 
-<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;700&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Edu+SA+Hand:wght@400;500;700&display=swap" rel="stylesheet">
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Edu+SA+Hand:wght@400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Finger+Paint&display=swap" rel="stylesheet">
 
 
 
 
 </head>
 <body>
-  <section class="hero">
-    <div class="content">
-      <h1>Opulent Nexus</h1>
-      <p>"Digital Solutions That Look Good & Work Better."</p>
-      <a href="#get-started" class="cta-btn">Get Started Free</a>
+
+<nav class="navbar">
+  <div class="container">
+    <div class="logo">Opulent Nexus</div>
+    
+    <div class="hamburger" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
     </div>
- <div class="image-wrapper">
- <video autoplay muted loop playsinline width="100%">
-  <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+
+    <ul class="nav-links" id="navMenu">
+      <li><a href="#services">Services</a></li>
+      <li><a href="#completed">Works</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
 
 
-</div>
+  <!-- Hero Section -->
+ <section class="hero">
+    <div class="content">
+      <h1>Next Move!</h1>
+      <p>"Digital Solutions That Look Good & Work Better."</p>
+      <a href="#contact" class="cta-btn">Request a Quote</a>
+    </div>
+
+    <div class="image-wrapper">
+      <video autoplay muted loop playsinline width="100%">
+        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </section> <!-- ✅ hero section properly closed -->
+
+  <section id="about" class="about-us container">
+  <h2>About Us</h2>
+  <div class="about-content">
+    <div class="about-text">
+      <p>
+        <strong>Opulent Nexus</strong> is your creative partner in digital growth.
+        We specialize in <strong>web design</strong>, <strong>digital marketing</strong>,
+        <strong>branding</strong>, and <strong>graphic design</strong>—blending creativity and strategy
+        to make your brand stand out.  From stunning websites to impactful visuals, we craft digital experiences
+        that leave a <strong>lasting impression</strong>.
+      </p>
+    </div>
+  </div>
+</section>
 
 
-</div>
-
+  <!-- Services Section -->
+  <section id="services" class="services container">
+    <h2>Our Services</h2>
+    <div class="service-cards">
+      <div class="card">
+        <div class="icon">📈</div>
+        <h3>Digital Marketing</h3>
+        <p>SEO, social media campaigns, and targeted ads to grow.</p>
+      </div>
+      <div class="card">
+        <div class="icon">💻</div>
+        <h3>Web Development</h3>
+        <p>Responsive, fast, and beautiful websites built with the latest tech.</p>
+      </div>
+      <div class="card">
+        <div class="icon">🎨</div>
+        <h3>Logo & Poster Design</h3>
+        <p>Creative branding assets that matches your brand.</p>
+      </div>
+    </div>
   </section>
+
+  <!-- Completed Websites -->
+  <section id="completed" class="completed container">
+    <h2>Completed Websites</h2>
+    <div class="folder-grid">
+      <div class="folder">
+        <img src="https://i.ibb.co/7tBWDZK6/Screenshot-20250607-140607-Samsung-Internet.jpg" alt="Responsive travel agency website">
+        <h3>Travel Agency</h3>
+        <p>Site built with HTML, CSS, JS</p>
+        <a href="https://tlightindia.com/" target="_blank" class="btn-secondary">View Site</a>
+      </div>
+      <div class="folder">
+        <img src="https://i.ibb.co/5h4zbKxt/Screenshot-20250607-162436-Samsung-Internet.jpg" alt="Industrial website build with wordpress">
+        <h3>Industrial Website</h3>
+        <p>Site built with Wordpress</p>
+        <a href="https://randmengineers.co.in/" target="_blank" class="btn-secondary">View Site</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Works Section -->
+  <section id="works" class="works container">
+    <h2>Our Works</h2>
+    <div class="gallery">
+      <div class="gallery-item"><img src="https://i.ibb.co/gM1Jcm7R/20250607-141251.jpg" alt="Opulent logo" /></div>
+      <div class="gallery-item"><img src="https://i.ibb.co/d07Hqmht/Copy-of-Red-and-White-Modern-Geometric-Learning-Centre-Logo-20240916-162931-0000.jpg" alt="English learning platform logo" /></div>
+      <div class="gallery-item"><img src="https://i.ibb.co/Q3zW5WwS/Copy-of-Copy-of-EEE-20240913-135503-0000.jpg" alt="Department logo" /></div>
+      <div class="gallery-item"><img src="https://i.ibb.co/9HVRnhBC/images-23.jpg" alt="Industrial company logo" /></div>
+      <div class="gallery-item"><img src="https://i.ibb.co/kVtzB0Tx/20250607-000334.jpg" alt="Beauty parlour logo" /></div>
+      <div class="gallery-item"><img src="https://i.ibb.co/bR83WY3G/IMG-20250606-WA0186.jpg" alt="Travel agency logo" /></div>
+    </div>
+  </section>
+
+
+  <section id="testimonials" class="testimonials">
+  <h2>What Our Clients Say</h2>
+  <div class="testimonial-container">
+
+    <div class="testimonial-card">
+      <p class="review">“Opulent delivered exceptional quality and timely project completion.”</p>
+      <div class="client-info">
+        <strong>Rajkumar G</strong>
+        <span>CEO of R&M Engineers And Services (P) Ltd.</span>
+      </div>
+    </div>
+
+    <div class="testimonial-card">
+      <p class="review">“Opulent Web Developers boosted our online visibility & bookings!”</p>
+      <div class="client-info">
+        <strong>Padmakumar</strong>
+        <span>Proprietor, Swagath Houseboats</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact container">
+    <h2>Contact Us!</h2>
+    <p>Ready to start your project? Get in touch!</p>
+    <form id="contact-form" action="https://formspree.io/f/xpwrqnrk" method="POST">
+      <input type="email" name="email" placeholder="Your email" required />
+      <textarea name="message" placeholder="Your message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+
+    <div id="response-message" style="display:none; margin-top:10px;"></div>
+
+    <script>
+      const form = document.getElementById('contact-form');
+      const responseMessage = document.getElementById('response-message');
+
+      form.addEventListener('submit', function(event) {
+        event.preventDefault();
+        const formData = new FormData(form);
+
+        fetch(form.action, {
+          method: 'POST',
+          body: formData,
+          headers: { 'Accept': 'application/json' }
+        }).then(response => {
+          if (response.ok) {
+            responseMessage.style.display = 'block';
+            responseMessage.style.color = 'green';
+            responseMessage.textContent = 'Thanks for your message! We will get back to you soon.';
+            form.reset();
+          } else {
+            response.json().then(data => {
+              responseMessage.style.display = 'block';
+              responseMessage.style.color = 'red';
+              if (data.errors) {
+                responseMessage.textContent = data.errors.map(e => e.message).join(", ");
+              } else {
+                responseMessage.textContent = 'Oops! There was a problem submitting your form.';
+              }
+            });
+          }
+        }).catch(() => {
+          responseMessage.style.display = 'block';
+          responseMessage.style.color = 'red';
+          responseMessage.textContent = 'Oops! There was a problem submitting your form.';
+        });
+      });
+    </script>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 OpulentNexus. All rights reserved.</p>
+  </footer>
+<style>
+  html {
+    scroll-behavior: smooth;
+  }
+</style>
+
+
 </body>
 </html>
+<script>
+  function toggleMenu() {
+    document.getElementById('navMenu').classList.toggle('show');
+  }
+</script>
