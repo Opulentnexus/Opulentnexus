@@ -905,6 +905,31 @@ Testimonials Section */
   }
 }
 
+.clients-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.clients-section img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Media query for mobile */
+@media (max-width: 768px) {
+  .clients-section {
+    padding: 1rem;
+  }
+
+  .clients-section img {
+    display: none;  /* Hide image on mobile */
+  }
+}
+
+
 /* Footer */
 footer {
   background: #111;
