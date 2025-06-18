@@ -8,19 +8,21 @@
 body {
   font-family: 'Segoe UI', sans-serif;
   background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
+
 /* Cream background */
   color: #1e1e1e;
   line-height: 1.6;
 }
 
+
 /* Base Navbar Styling */
-/* Navbar Styles */
 .navbar {
   background: white;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
   position: sticky;
   top: 0;
   z-index: 1000;
+  width: 100%;
 }
 
 .navbar .container {
@@ -31,12 +33,18 @@ body {
 }
 
 .logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
   font-family: 'Michroma', sans-serif;
   font-size: 1.5rem;
   font-weight: bold;
-   position: relative;
-  left:-10px;
   color: #016F90;
+}
+
+.logo img {
+  height: 40px;
+  width: auto;
 }
 
 /* Navigation Links */
@@ -48,7 +56,7 @@ body {
 
 .nav-links li a {
   text-decoration: none;
- font-family: 'Edu SA Hand', cursive;
+  font-family: 'Edu SA Hand', cursive;
   color: #333;
   font-weight: 500;
   transition: color 0.3s;
@@ -74,21 +82,20 @@ body {
   transition: 0.3s;
 }
 
-/* Responsive Styles */
-@media (max-width: 768px) {
-  .navbar .container {
-    flex-direction: row;
+/* Responsive */
+@media (max-width: 1024px) {
+   .logo img {
+    height: 25px;
+    margin-left: -15px;
   }
-
-  @media (max-width: 768px) {
+  
+  
   .logo {
-    font-size: 1rem; /* or smaller as needed */
-   position: relative;
-  left:-20px;
+    font-size: 1.2rem;
   }
 }
 
-
+@media (max-width: 768px) {
   .nav-links {
     flex-direction: column;
     position: absolute;
@@ -107,115 +114,162 @@ body {
 
   .hamburger {
     display: flex;
-    position: relative;
-  right:-20px;
+      margin-right: -25px;
+
+
+  }
+
+  .logo {
+    font-size: 1rem;
   }
 }
 
-
-.hero {
-  display: flex;
-  flex-direction: row;
+.hero-v2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   align-items: center;
-  justify-content: space-between;
-  padding: 5rem 2rem;
-  gap: 2rem;
-  text-align: left;
+  padding: 6rem 4rem;
+  gap: 3rem;
 }
 
-.content {
-  flex: 1;
+.hero-content {
+  max-width: 600px;
 }
 
-.hero h1 {
-  font-size: 2.8rem;
+.hero-content h1 {
+  font-size: 3.2rem;
   font-family: 'Unbounded', sans-serif;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
   font-weight: 700;
+  color: #111827;
 }
 
-.hero p {
-  font-size: clamp(1rem, 2.5vw, 1.2rem);
+.hero-content p {
+  font-size: 1.2rem;
   font-family: 'Edu SA Hand', cursive;
-  color: #555;
-  margin-bottom: 2rem;
-  white-space: nowrap;
-  overflow: hidden;
+  color: #4B5563;
+  margin-bottom: 2.5rem;
 }
 
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
 
-.cta-btn {
-  background-color: #000;
-  color: #fff;
-  padding: 0.9rem 2rem;
-  border: none;
+.btn {
+  padding: 1rem 2rem;
+  border-radius: 12px;
   text-decoration: none;
-  border-radius: 8px;
+  font-weight: 600;
+  font-family: 'Michroma', sans-serif;
   font-size: 1rem;
- font-family: 'Finger Paint', cursive;
-
-  transition: background 0.3s;
+  transition: all 0.3s ease;
 }
 
-.cta-btn:hover {
-  background-color: #333;
+.btn.primary {
+  background: #000;
+  color: #fff;
 }
 
-/* Responsive Styles for Mobile */
-@media (max-width: 768px) {
-  .hero {
-    flex-direction: column;
-    padding: 3rem 1rem;
-    text-align: center;
-  }
-
-  .hero h1 {
-    font-size: 2rem;
-  }
-
-  .hero p {
-    font-size: 0.8rem;
-    margin: 0 auto 1.5rem;
-  }
-
-  .cta-btn {
-    padding: 0.7rem 1.5rem;
-    font-size: 0.95rem;
-  }
+.btn.primary:hover {
+  background: #333;
+  transform: scale(1.05);
 }
 
-
-.image-wrapper {
-  flex: 1;
+.btn.secondary {
+  background: #000000;
+  color: #fffbfb;
+  padding: 0.91rem 2rem;
+  border: 2px solid #000;
 }
 
-.image-wrapper video,
-.image-wrapper img {
+.btn.secondary:hover {
+  background: #333;
+  color: #fff;
+  transform: scale(1.05);
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+.hero-image img {
   max-width: 100%;
-  height: auto;
-  border-radius: 16px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
-  display: block;
+  border-radius: 24px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+  transform: rotate(8deg);
+  transition: transform 0.5s ease;
+}
+
+.hero-image img:hover {
+  transform: rotate(0deg) scale(1.02);
 }
 
 
-/* Mobile styles */
-@media (max-width: 768px) {
-  .hero {
-    flex-direction: column; /* Stack on mobile */
+.hero-buttons {
+  display: flex;
+  gap: 0.5rem; /* smaller gap helps fit on tiny screens */
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .hero-v2 {
+    grid-template-columns: 1fr;
     text-align: center;
+    padding: 3rem 1.5rem;
   }
 
-  .content {
-    order: 1;
+  .hero-content p {
+  font-size: 0.9rem;
+  font-family: 'Edu SA Hand', cursive;
+  color: #4B5563;
+  margin-bottom: 2.5rem;
+}
+
+@media (max-width: 768px) {
+  .btn {
+    padding: 0.7rem 1.5rem;
+    font-size: 0.9rem;
+  }
+}
+
+.btn.secondary {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.9rem;
+  } 
+
+
+  @media (max-width: 480px) {
+  .btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.69rem;
+    font-family: 'Michroma', sans-serif;
   }
 
-  .image-wrapper {
-    order: 2;
+  .btn.secondary {
+    padding: 0.46rem 1rem;
+    font-size: 0.62rem;
+  }
+}
+  .hero-image {
     margin-top: 2rem;
   }
+
+  .hero-content h1 {
+    font-size: 1.5rem;
+  }
 }
 
+.hero-image img {
+  transform: rotate(0deg);
+  transition: transform 0.5s ease;
+}
+
+/* About section */
 .about-us {
   padding: 1rem 2rem;
  
@@ -239,7 +293,7 @@ body {
 
 .about-text {
   flex: 1 1 300px;
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+ font-family: 'Comfortaa', sans-serif;
 
   color: #333;
   font-size: 1.1rem;
@@ -269,6 +323,7 @@ body {
 
   .about-text {
     text-align: center;
+    font-size: 0.9rem
   }
 }
 
@@ -352,10 +407,18 @@ body {
 /* Card Text */
 .card p {
   font-size: 1.05rem;
+  font-family: 'Comfortaa', sans-serif;
   line-height: 1.6;
   color: #f0e6b2;
   z-index: 1;
   position: relative;
+}
+
+/* For smaller screens */
+@media (max-width: 480px) {
+  .services {
+    margin-top: 0rem;
+  }
 }
 
 /* Completed Websites Section */
@@ -439,6 +502,7 @@ body {
 .folder p {
   color: #e0e0c0;
   font-size: 1rem;
+  font-family: 'Comfortaa', sans-serif;
   line-height: 1.6;
   margin-bottom: 1.2rem;
   z-index: 1;
@@ -635,7 +699,6 @@ Testimonials Section */
 }
 
 /* Testimonials Container */
-/* Testimonials Container */
 .testimonial-container {
   display: flex;
   flex-wrap: wrap;
@@ -669,6 +732,7 @@ Testimonials Section */
 .testimonial-card .review {
   font-style: normal;
   font-size: 1rem;
+  font-family: 'Comfortaa', sans-serif;
   line-height: 1.7;
   color: #333;
   margin-bottom: 1.2rem;
@@ -690,7 +754,7 @@ Testimonials Section */
 /* ---------- Media Queries ---------- */
 @media (max-width: 768px) {
   .testimonial-container {
-    padding: 1.5rem 1rem;
+    padding: 1.5rem 0rem;
   }
 
   .testimonial-card {
@@ -704,6 +768,11 @@ Testimonials Section */
     padding: 1.2rem;
   }
 
+  .testimonials h2 {
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
+  color: #000000;
+}
   .testimonial-card .review {
     font-size: 0.95rem;
   }
@@ -733,7 +802,8 @@ Testimonials Section */
 }
 
 .contact p {
-  font-size: 1.1rem;
+  font-size: 1rem;
+  font-family: 'Comfortaa', sans-serif;
   margin-bottom: 2rem;
   color: #ff0000;
 }
@@ -845,6 +915,13 @@ footer {
   letter-spacing: 1.2px;
   border-top: 1px solid #222;
 }
+/* For small devices */
+@media (max-width: 480px) {
+  footer {
+    font-size: 0.7rem;
+    
+  }
+}
 
 /* Responsive */
 @media (max-width: 768px) {
@@ -856,3 +933,4 @@ footer {
 html {
   scroll-behavior: smooth;
 }
+
