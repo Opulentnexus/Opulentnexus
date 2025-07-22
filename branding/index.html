@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  
+<title>Branding Essentials for Startups | Build a Powerful Brand Identity</title>
+
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Discover 5 essential branding strategies every startup must follow to build trust, stand out, and grow their audience effectively." />
+  <meta name="keywords" content="startup branding, branding tips, logo design, brand identity, brand voice, visual branding, business branding" />
+  <meta name="author" content="Your Company Name" />
+
+
+
+
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet"/>
+    <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Edu+SA+Hand:wght@400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Finger+Paint&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #111;
+      --accent: #ff5c5c;
+      --bg: #f7f7f7;
+      --text: #333;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+    }
+
+
+/* Base Navbar Styling */
+.navbar {
+ background-color: #ffffff;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: 'Michroma', sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-left: -0.5rem;
+  color: #013a4b;
+}
+
+.logo img {
+  height: 40px;
+  width: auto;
+}
+
+/* Navigation Links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  font-family: 'Comfortaa', sans-serif;
+  color: #4a4848;
+  font-weight: 500;
+  transition: color 0.3s;
+
+}
+
+.nav-links li a:hover {
+  color: #016F90;
+}
+
+/* Hamburger Menu Button */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.hamburger span {
+  height: 3px;
+  width: 25px;
+  background: #313030;
+  border-radius: 2px;
+  transition: 0.3s;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+   .logo img {
+    height: 25px;
+    margin-left: -15px;
+  }
+  
+  
+  .logo {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+ 
+  .logo {
+ 
+  margin-left: -1.2rem;
+ 
+}
+ 
+ 
+  .nav-links {
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: white;
+    width: 100%;
+    padding: 1rem 2rem;
+    display: none;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.06);
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .hamburger {
+    display: flex;
+      margin-right: -25px;
+
+
+  }
+
+  .logo {
+    font-size: 1rem;
+  }
+}
+
+
+/* Responsive */
+@media (max-width: 600px) {
+   .logo {
+    font-size: 0.8rem;
+  }
+}
+
+
+
+    header {
+      background: var(--primary);
+      color: white;
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.8rem;
+      margin-bottom: 1rem;
+      animation: fadeInUp 0.6s ease;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      opacity: 0.8;
+    }
+
+    main {
+      max-width: 800px;
+      margin: 3rem auto;
+      padding: 0 2rem;
+    }
+
+    article h2 {
+      font-size: 1.5rem;
+      margin: 2rem 0 1rem;
+      color: var(--accent);
+    }
+
+    article p {
+      margin-bottom: 1rem;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      padding: 3rem 1rem;
+      background: #eee;
+      color: #666;
+      margin-top: 4rem;
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      main {
+        padding: 0 1rem;
+      }
+
+      article h2 {
+        font-size: 1.25rem;
+      }
+    }
+
+
+
+.scroll-reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.6s ease-out;
+  will-change: opacity, transform;
+}
+
+.scroll-reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+
+
+
+
+  </style>
+</head>
+<body>
+
+  <nav class="navbar">
+  <div class="container">
+    <div class="logo">
+       <!-- Replace with your logo image path -->
+      OPULENT NEXUS
+    </div>
+
+    <div class="hamburger" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+   <ul class="nav-links" id="navMenu">
+       <li><a href="/">Home</a></li>
+      <li><a href="/#services">Services</a></li>
+      <li><a href="/#completed">Works</a></li>
+      <li><a href="/#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+
+
+ <header>
+  <h1>Branding Essentials for Startups</h1>
+  <p>Create a lasting impression and build brand trust from day one with these essential branding strategies.</p>
+</header>
+
+<main>
+  <article>
+    <h2>1. Define Your Brand Identity</h2>
+    <p>Start by identifying your mission, vision, and values. Understand what your startup stands for and what message you want to convey to your audience.</p>
+
+    <h2>2. Design a Memorable Logo</h2>
+    <p>Your logo is the face of your brand. Keep it simple, scalable, and relevant to your industry. Use consistent typography and color schemes.</p>
+
+    <h2>3. Develop a Consistent Visual Style</h2>
+    <p>From website colors to Instagram posts, visual consistency builds trust. Stick to a style guide for fonts, colors, and imagery across all platforms.</p>
+
+    <h2>4. Craft a Clear Brand Voice</h2>
+    <p>Your tone of voice should reflect your brand personality — whether it's friendly, professional, quirky, or bold. Use it consistently in all your content.</p>
+
+    <h2>5. Build a Strong Online Presence</h2>
+    <p>Establish a solid digital footprint through a professional website, active social media, and SEO-optimized content. Engage your audience regularly to stay top-of-mind.</p>
+  </article>
+</main>
+
+
+  <footer>
+    © 2025 Opulent Nexus. All rights reserved.
+  </footer>
+
+<script>
+  function toggleMenu() {
+    document.getElementById('navMenu').classList.toggle('show');
+  }
+</script>
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const elements = document.querySelectorAll(".scroll-reveal");
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+            observer.unobserve(entry.target); // Animate only once
+          }
+        });
+      },
+      { threshold: 0.1 }
+    );
+
+    elements.forEach((el) => observer.observe(el));
+  });
+</script>
+
+
+<script>
+  document.querySelectorAll("main h2, main p, header h1, header p").forEach(el => {
+    el.classList.add("scroll-reveal");
+  });
+</script>
+
+
+
+
+
+</body>
+</html>

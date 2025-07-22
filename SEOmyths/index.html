@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  
+<title>SEO Myths Busted in 2025 | What Really Works Today</title>
+<meta name="description" content="Think keyword stuffing still works? Discover the top SEO myths in 2025 and what strategies actually drive results in search rankings.">
+
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet"/>
+    <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Edu+SA+Hand:wght@400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Finger+Paint&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #111;
+      --accent: #ff5c5c;
+      --bg: #f7f7f7;
+      --text: #333;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+    }
+
+
+
+/* Base Navbar Styling */
+.navbar {
+ background-color: #ffffff;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: 'Michroma', sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-left: -0.5rem;
+  color: #013a4b;
+}
+
+.logo img {
+  height: 40px;
+  width: auto;
+}
+
+/* Navigation Links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  font-family: 'Comfortaa', sans-serif;
+  color: #4a4848;
+  font-weight: 500;
+  transition: color 0.3s;
+
+}
+
+.nav-links li a:hover {
+  color: #016F90;
+}
+
+/* Hamburger Menu Button */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.hamburger span {
+  height: 3px;
+  width: 25px;
+  background: #313030;
+  border-radius: 2px;
+  transition: 0.3s;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+   .logo img {
+    height: 25px;
+    margin-left: -15px;
+  }
+  
+  
+  .logo {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+ 
+  .logo {
+ 
+  margin-left: -1.2rem;
+ 
+}
+ 
+ 
+  .nav-links {
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: white;
+    width: 100%;
+    padding: 1rem 2rem;
+    display: none;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.06);
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .hamburger {
+    display: flex;
+      margin-right: -25px;
+
+
+  }
+
+  .logo {
+    font-size: 1rem;
+  }
+}
+
+
+/* Responsive */
+@media (max-width: 600px) {
+   .logo {
+    font-size: 0.8rem;
+  }
+}
+
+
+    header {
+      background: var(--primary);
+      color: white;
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.8rem;
+      margin-bottom: 1rem;
+      animation: fadeInUp 0.6s ease;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      opacity: 0.8;
+    }
+
+    main {
+      max-width: 800px;
+      margin: 3rem auto;
+      padding: 0 2rem;
+    }
+
+    article h2 {
+      font-size: 1.5rem;
+      margin: 2rem 0 1rem;
+      color: var(--accent);
+    }
+
+    article p {
+      margin-bottom: 1rem;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      padding: 3rem 1rem;
+      background: #eee;
+      color: #666;
+      margin-top: 4rem;
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      main {
+        padding: 0 1rem;
+      }
+
+      article h2 {
+        font-size: 1.25rem;
+      }
+    }
+
+
+.scroll-reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.6s ease-out;
+  will-change: opacity, transform;
+}
+
+.scroll-reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+
+
+
+
+
+  </style>
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="container">
+    <div class="logo">
+       <!-- Replace with your logo image path -->
+      OPULENT NEXUS
+    </div>
+
+    <div class="hamburger" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <ul class="nav-links" id="navMenu">
+       <li><a href="/">Home</a></li>
+      <li><a href="/#services">Services</a></li>
+      <li><a href="/#completed">Works</a></li>
+      <li><a href="/#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+
+  <header>
+  <h1>SEO Myths Busted in 2025</h1>
+  <p>Don't fall behind — uncover the truth about search engine optimization in the modern digital landscape.</p>
+</header>
+
+<main>
+  <article>
+    <h2>1. Keyword Stuffing Still Works</h2>
+    <p>Gone are the days when jamming your content with repeated keywords helped rankings. In 2025, search engines prioritize context, relevance, and user experience over sheer keyword frequency.</p>
+
+    <h2>2. Backlinks Are All That Matter</h2>
+    <p>While backlinks remain important, Google now considers content quality, topical authority, and intent matching even more. A single authoritative post can outrank dozens of backlink-heavy pages.</p>
+
+    <h2>3. SEO Is a One-Time Task</h2>
+    <p>SEO isn’t “set it and forget it.” Algorithms evolve constantly. Regular content updates, technical audits, and UX improvements are essential for maintaining your rankings.</p>
+
+    <h2>4. Meta Tags Don’t Matter Anymore</h2>
+    <p>Meta titles and descriptions may not directly boost rankings, but they greatly influence click-through rates. In 2025, optimized snippets are crucial for visibility in rich search results.</p>
+
+    <h2>5. Longer Content Always Ranks Better</h2>
+    <p>Length doesn’t guarantee quality. Google now values concise, focused answers that match user intent over fluff-filled essays. It's all about usefulness — not word count.</p>
+  </article>
+</main>
+
+
+  <footer>
+    © 2025 Opulent Nexus. All rights reserved.
+  </footer>
+
+
+<script>
+  function toggleMenu() {
+    document.getElementById('navMenu').classList.toggle('show');
+  }
+</script>
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const elements = document.querySelectorAll(".scroll-reveal");
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+            observer.unobserve(entry.target); // Animate only once
+          }
+        });
+      },
+      { threshold: 0.1 }
+    );
+
+    elements.forEach((el) => observer.observe(el));
+  });
+</script>
+
+
+<script>
+  document.querySelectorAll("main h2, main p, header h1, header p").forEach(el => {
+    el.classList.add("scroll-reveal");
+  });
+</script>
+
+
+
+
+
+</body>
+</html>
