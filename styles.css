@@ -327,14 +327,10 @@ body {
 }
 
 .about-text {
-  flex: 1 1 300px;
- font-family: 'Comfortaa', sans-serif;
-
-  color: #ffffff;
-  font-size: 1.1rem;
-  text-align: center;
+ font-size: 1.05rem;
   line-height: 1.6;
-  text-align: left;
+  color: #333;
+    text-align: justify;
 }
 
 .about-text strong {
@@ -1749,3 +1745,4 @@ html {
   opacity: 1;
   transform: translateY(0);
 }
+
