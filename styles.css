@@ -583,6 +583,7 @@ body {
   margin-top: 9rem;
   text-align: center;
   padding: 0 2rem;
+  scroll-margin-top: 70px;
    
 }
 
@@ -1741,6 +1742,7 @@ html {
   opacity: 1;
   transform: translateY(0);
 }
+
 
 
 
