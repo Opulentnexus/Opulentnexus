@@ -305,7 +305,7 @@ body {
 /* About section */
 .about-us {
   padding: 4rem 2rem;
- 
+  background: #f9f9f9; /* light background */
   text-align: center;
 }
 
@@ -313,48 +313,41 @@ body {
   font-size: 2rem;
   margin-bottom: 2rem;
   font-family: 'Michroma', sans-serif;
-  color: #016F90;
+  color: #222; /* dark heading */
 }
 
 .about-content {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 2rem;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 .about-text {
- font-size: 1.05rem;
-  line-height: 1.6;
+  font-size: 1.1rem;
+  line-height: 1.7;
   color: #333;
-    text-align: justify;
+  text-align: justify;
 }
 
 .about-text strong {
-  color: #016F90;
+  color: #016F90; /* highlight brand name */
 }
-
 
 /* Responsive design */
 @media (max-width: 768px) {
-  .about-content {
-    flex-direction: column;
-    text-align: center;
+  .about-us {
+    padding: 3rem 1.5rem;
   }
 
   .about-us h2 {
-  font-size: clamp(1.5rem, 5vw, 2rem); /* Responsive size */
-  margin-bottom: 2rem;
-  font-family: 'Michroma', sans-serif;
-  color: #016F90;
-}
+    font-size: clamp(1.5rem, 5vw, 2rem);
+  }
 
   .about-text {
-    text-align: center;
-    font-size: 0.9rem
+    font-size: 1rem;
+    text-align: left; /* still readable on mobile */
   }
 }
+
 
 
 .team-profile {
@@ -1742,6 +1735,7 @@ html {
   opacity: 1;
   transform: translateY(0);
 }
+
 
 
 
