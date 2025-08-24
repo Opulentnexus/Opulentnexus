@@ -625,10 +625,25 @@ With 15+ happy clients and growing, we blend creativity, strategy, and design to
 </body>
 </html>
 <script>
-  function toggleMenu() {
-    document.getElementById('navMenu').classList.toggle('show');
-  }
+ function toggleMenu() {
+  document.getElementById('navMenu').classList.toggle('show');
+}
+
+// Close menu when clicking a link
+document.addEventListener("DOMContentLoaded", () => {
+  const navMenu = document.getElementById('navMenu');
+  const menuLinks = navMenu.querySelectorAll("a");
+
+  menuLinks.forEach(link => {
+    link.addEventListener("click", () => {
+      navMenu.classList.remove("show");
+    });
+  });
+});
+
 </script>
+
+
 
 
 
