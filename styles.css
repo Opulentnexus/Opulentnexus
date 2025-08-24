@@ -343,9 +343,9 @@ body {
     font-size: clamp(1.5rem, 5vw, 2rem);
   }
 
-  .about-text {
+   .about-text {
     font-size: 1rem;
-    text-align: left; /* still readable on mobile */
+    text-align: center; /* still readable on mobile */ 
   }
 }
 
@@ -1742,6 +1742,7 @@ html {
   opacity: 1;
   transform: translateY(0);
 }
+
 
 
 
