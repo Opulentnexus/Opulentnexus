@@ -302,10 +302,10 @@ body {
   }
 }
 
+
 /* About section */
 .about-us {
-  padding: 4rem 2rem;
-  background: #f9f9f9; /* light background */
+  padding: 4rem 2rem;  
   text-align: center;
 }
 
@@ -313,7 +313,7 @@ body {
   font-size: 2rem;
   margin-bottom: 2rem;
   font-family: 'Michroma', sans-serif;
-  color: #222; /* dark heading */
+  color: #e7e5e5; /* dark heading */
 }
 
 .about-content {
@@ -336,6 +336,7 @@ body {
 @media (max-width: 768px) {
   .about-us {
     padding: 3rem 1.5rem;
+    margin-bottom: 2.5rem;
   }
 
   .about-us h2 {
@@ -400,6 +401,7 @@ body {
   font-size: 1rem;
   line-height: 1.6;
   color: #555;
+  text-align: justify;
 }
 
 .social-links {
@@ -1735,6 +1737,7 @@ html {
   opacity: 1;
   transform: translateY(0);
 }
+
 
 
 
