@@ -612,26 +612,9 @@ body {
 /* Responsive Grid */
 .folder-grid {
   display: grid;
-  grid-template-columns: repeat(1, 1fr);
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 2.5rem;
-  padding-top: 1rem;
-  margin-top: -2rem;
 }
-
-/* Tablet */
-@media (min-width: 768px) {
-  .folder-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-/* Desktop */
-@media (min-width: 1024px) {
-  .folder-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
 /* Folder Cards */
 .folder {
   background: rgba(255, 255, 255, 0.1);
@@ -1757,6 +1740,7 @@ html {
   opacity: 1;
   transform: translateY(0);
 }
+
 
 
 
