@@ -19,6 +19,7 @@ body {
 .navbar {
  background-color: #ffffff;
   position: sticky;
+    border-radius: 0 0 25px 25px;
   top: 0;
   z-index: 1000;
   width: 100%;
