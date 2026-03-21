@@ -780,6 +780,32 @@ body {
   letter-spacing: 1px;
 }
 
+
+
+.gallery-track {
+  display: flex;
+  gap: 1.5rem;
+  width: max-content;
+  animation: scrollGallery 10s linear infinite;
+}
+
+/* Pause on hover (optional) */
+.gallery:hover .gallery-track {
+  animation-play-state: paused;
+}
+
+
+
+/* Animation */
+@keyframes scrollGallery {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
 /* Horizontal Scroll Gallery */
 .gallery {
   display: flex;
@@ -1024,6 +1050,144 @@ body {
   transform-style: preserve-3d;   /* ✅ NEW */
   backface-visibility: hidden;   /* ✅ NEW */
 }
+
+
+
+
+
+
+/* TEAM SECTION */
+.team {
+  padding: 5rem 2rem;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+ 
+  color: #fff;
+}
+
+.team h2 {
+  font-size: 2.2rem;
+  margin-bottom: 3rem;
+  font-family: 'Unbounded', sans-serif;
+}
+
+/* GRID */
+.team-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 per row on laptop */
+  gap: 2rem;
+}
+
+/* CARD */
+.team-card {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 2rem 1.5rem;
+  border-radius: 20px;
+  backdrop-filter: blur(12px);
+  transition: 0.4s ease;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.team-card img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+
+  /* Transparent border for gradient */
+  border: 3px solid transparent;
+
+  /* Gradient border */
+  background: 
+    linear-gradient(#000, #000) padding-box,
+    linear-gradient(45deg, #FC466B, #3F5EFB, #00f2fe, #FC466B) border-box;
+
+  background-size: 300% 300%;
+
+  /* Animation */
+  animation: gradientMove 4s linear infinite;
+
+  transition: 0.4s ease;
+}
+
+/* Animation */
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 200% 50%;
+  }
+}
+
+/* HOVER EFFECT */
+.team-card:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+}
+
+.team-card:hover img {
+  transform: scale(1.1);
+  border-color: #3F5EFB;
+}
+
+/* TEXT */
+.team-card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.3rem;
+}
+
+.team-card span {
+  font-size: 0.85rem;
+  color: #FC466B;
+  display: block;
+  margin-bottom: 0.8rem;
+}
+
+.team-card p {
+  font-size: 0.85rem;
+  color: #cbd5e1;
+  line-height: 1.5;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .team {
+    padding: 7rem 1rem;
+     padding-bottom: 0rem;
+  }
+}
+
+
+
+
+/* MOBILE → 1 CARD + SLIDE */
+@media (max-width: 600px) {
+
+  .team-container {
+    display: flex;
+    overflow-x: auto;
+    gap: 1rem;
+    scroll-snap-type: x mandatory;
+   
+  }
+
+  /* Hide scrollbar */
+  .team-container::-webkit-scrollbar {
+    display: none;
+  }
+
+  .team-card {
+    flex: 0 0 85%;
+    margin-right: 10px;
+  }
+}
+
+
+
 
 
 
@@ -1287,6 +1451,10 @@ body {
 }
 
  
+
+
+
+
  
  
   .section-title {
