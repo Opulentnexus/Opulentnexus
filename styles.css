@@ -1681,7 +1681,7 @@ footer{
   display: flex;
   width: max-content;
   animation: scroll 30s linear infinite;
-  margin-top: -20px;
+  
 }
 
 .gallery-group {
