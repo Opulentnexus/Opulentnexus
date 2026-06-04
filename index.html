@@ -9,14 +9,14 @@
   <meta name="robots" content="index, follow">
   <meta name="color-scheme" content="dark light">
 
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Edu+SA+Hand:wght@400;500;700&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Finger+Paint&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Iosevka+Charon:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
 
 
@@ -41,196 +41,200 @@
 </head>
 <body>
 
-<nav class="navbar">
-  <div class="container">
-    <div class="logo">
-       <!-- Replace with your logo image path -->
-      OPULENT NEXUS
+<!-- NAV -->
+<nav>
+    <div class="nav-logo">OpulentNexus</div>
+
+    <div class="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
     </div>
 
-    <div class="hamburger" onclick="toggleMenu()">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
-
-    <ul class="nav-links" id="navMenu">
-      <li><a href="#services">Services</a></li>
-      <li><a href="#completed">Works</a></li>
-      <li><a href="#blog">Blogs</a></li>
-      <li><a href="#contact">Contact</a></li>
+    <ul class="nav-links">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#works">Portfolio</a></li>
+        <li><a href="#team">Team</a></li>
+       
+        <li><a href="#contact">Contact</a></li>
     </ul>
-  </div>
 </nav>
 
-
-
- <!-- New Hero Section -->
-<section class="hero-v2">
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-grid"></div>
   <div class="hero-content">
-    <h1>Transform Your Digital Presence</h1>
-    <p>Creative solutions for modern businesses. Let's build your future together.</p>
-    <div class="hero-buttons">
-      <a href="#contact" class="btn primary">Request Quote</a>
-      <a href="#completed" class="btn secondary">View Portfolio</a>
+    <p class="hero-eyebrow">Digital · Branding · Growth</p>
+    <h1>Design the<br><em>Future</em> of<br>Your Brand</h1>
+    <p>We craft digital experiences that fuse creative vision with strategic precision — from stunning websites to immersive brand identities.</p>
+    <div class="hero-btns">
+      <a href="#contact" class="btn-primary">Start a Project</a>
+      <a href="#works" class="btn-secondary">View Our Work</a>
     </div>
   </div>
-
-
-</section>
-
-
-
-
-
-  <section id="about" class="about-us container">
-  <h2>About Us</h2>
-  <div class="about-content">
-    <div class="about-text">
-      <p>
-        <strong>Opulent Nexus</strong> is your creative partner in digital growth.
-        We specialize in <strong>web design</strong>, <strong>digital marketing</strong>,
-        <strong>branding</strong>, and <strong>content creation</strong>—blending creativity and strategy
-        to make your brand stand out.  From stunning websites to impactful visuals, we craft digital experiences
-        that leave a <strong>lasting impression</strong>.
-      </p>
+  <div class="hero-stat-row">
+    <div class="hero-stat">
+      <div class="num">15+</div>
+      <div class="label">Satisfied Clients</div>
+    </div>
+    <div class="hero-stat">
+      <div class="num">7+</div>
+      <div class="label">Websites Launched</div>
+    </div>
+    <div class="hero-stat">
+      <div class="num">3+</div>
+      <div class="label">Years Crafting</div>
     </div>
   </div>
 </section>
 
- 
+<!-- MARQUEE -->
+<div class="marquee-strip">
+  <div class="marquee-inner">
+    <span class="marquee-item">Web Design <span class="marquee-dot">◆</span></span>
+    <span class="marquee-item">Brand Identity <span class="marquee-dot">◆</span></span>
+    <span class="marquee-item">Digital Marketing <span class="marquee-dot">◆</span></span>
+    <span class="marquee-item">Social Media <span class="marquee-dot">◆</span></span>
+    <span class="marquee-item">Google &amp; Meta Ads <span class="marquee-dot">◆</span></span>
+    <span class="marquee-item">Video Production <span class="marquee-dot">◆</span></span>
+    <span class="marquee-item">SEO Strategy <span class="marquee-dot">◆</span></span>
+    <span class="marquee-item">Lead Generation <span class="marquee-dot">◆</span></span>
+    <span class="marquee-item">Web Design <span class="marquee-dot">◆</span></span>
+    <span class="marquee-item">Brand Identity <span class="marquee-dot">◆</span></span>
+    <span class="marquee-item">Digital Marketing <span class="marquee-dot">◆</span></span>
+    <span class="marquee-item">Social Media <span class="marquee-dot">◆</span></span>
+    <span class="marquee-item">Google &amp; Meta Ads <span class="marquee-dot">◆</span></span>
+    <span class="marquee-item">Video Production <span class="marquee-dot">◆</span></span>
+    <span class="marquee-item">SEO Strategy <span class="marquee-dot">◆</span></span>
+    <span class="marquee-item">Lead Generation <span class="marquee-dot">◆</span></span>
+  </div>
+</div>
 
-<section class="team-profile">
-  <div class="profile-card">
-    <div class="profile-image">
-      <img src="anandhan2.jpg" alt="Founder Name">
+<!-- ABOUT -->
+<section class="section" id="about">
+ <p class="section-label" style="justify-content:center">Our Story</p>
+  <div class="about-grid">
+    <div class="about-text fade-in">
+      <h2>Creative <em>partners</em> in digital growth</h2>
+      <div class="gold-divider"></div>
+      <p>Opulent Nexus began as a design studio rooted in Kerala and grew into a full-service digital media company. We blend artistry with data to build brands that leave lasting impressions.</p>
+      <p>From responsive websites to performance-driven campaigns, our work spans the entire digital canvas — tailored for startups and businesses that demand excellence.</p>
+      <div class="about-motto">"Build trust. Deliver impact. Design the future."</div>
+      <p style="font-size:0.85rem;color:rgba(250,247,240,0.45)">Kalarcode, Alappuzha · Kerala · India</p>
     </div>
-    <div class="profile-content">
-      <h2>Anandhan Rajkumar</h2>
-      <p class="role">Founder & Creative Director</p>
-      <p>Opulent Nexus began its journey as Opulent Web Developer, initially focused on poster and logo design. A turning point came with a digital marketing project for a business associate, which led to growing trust, referrals, and new opportunities.
+    <div class="founder-card fade-in">
+      <img src="anandhan2.jpg" alt="Anandhan Rajkumar" class="founder-img">
+      <div class="founder-name">Anandhan Rajkumar</div>
+      <div class="founder-role">Founder &amp; Creative Director</div>
+      <div class="gold-divider"></div>
+      <p style="font-size:0.85rem;color:rgba(0, 0, 0, 0.55);line-height:1.7;font-weight:300">Leads Opulent Nexus with a vision for innovation — building brands that connect, convert, and endure. With 15+ satisfied clients and a steadily expanding portfolio.</p>
+    </div>
+  </div>
+</section>
 
-Today, Opulent Nexus has evolved into a full-service digital media and advertising company, offering expertise in branding, web design, social media management, performance marketing, content production, and client acquisition. Backed by a skilled team, we deliver creative, strategic, and result-driven solutions tailored to every client’s needs.
+<!-- SERVICES -->
+<section class="section services-bg" id="services">
+ <p class="section-label" style="justify-content:center">What We Do</p>
+  <div class="services-header">
+    <h2>Full-spectrum digital <em>expertise</em></h2>
+  </div>
+  <div class="services-grid fade-in">
+    <div class="service-item">
+      <div class="service-num">01</div>
+      <div class="service-name">Web Design &amp; Development</div>
+      <div class="service-desc">Modern, responsive websites engineered to elevate your brand and drive measurable results.</div>
+    </div>
+    <div class="service-item">
+      <div class="service-num">02</div>
+      <div class="service-name">Brand Identity &amp; Visual Design</div>
+      <div class="service-desc">Logos, palettes, and visual systems that build a strong, consistent brand presence.</div>
+    </div>
+    <div class="service-item">
+      <div class="service-num">03</div>
+      <div class="service-name">Social Media Management</div>
+      <div class="service-desc">Strategic content and community management to grow your digital footprint organically.</div>
+    </div>
+    <div class="service-item">
+      <div class="service-num">04</div>
+      <div class="service-name">Performance Marketing</div>
+      <div class="service-desc">Data-driven Google &amp; Meta campaigns engineered for maximum ROI and conversions.</div>
+    </div>
+    <div class="service-item">
+      <div class="service-num">05</div>
+      <div class="service-name">Video Production</div>
+      <div class="service-desc">Cinematic brand content that captivates audiences and amplifies your story.</div>
+    </div>
+    <div class="service-item">
+      <div class="service-num">06</div>
+      <div class="service-name">Influencer &amp; Lead Generation</div>
+      <div class="service-desc">Authentic partnerships and targeted outreach to unlock new audiences and qualified leads.</div>
+    </div>
+  </div>
+</section>
 
-With 15+ satisfied clients and a steadily expanding portfolio, our focus remains on building strong relationships and delivering meaningful impact through every project.
-  <br> Motto: Build trust, Deliver impact, Design the future. 
-   <br>Our Vision: To empower businesses with innovative, creative, and result-oriented digital solutions.</p>
-      <ul class="social-links">
-        <li><a href="https://in.linkedin.com/in/anandhan-rajkumar-2153461aa"><i class="fab fa-linkedin-in"></i></a></li>
-        <li><a href="https://www.instagram.com/a_r_k_007?igsh=MmpnemY2YzdxZ3Fl"><i class="fab fa-instagram"></i></a></li>
-      </ul>
+<!-- PORTFOLIO -->
+<section class="section" id="works">
+  <div class="works-header fade-in">
+    <p class="section-label" style="justify-content:center">Portfolio</p>
+    <h2>Crafted with <em>intention</em></h2>
+  </div>
+  <div class="portfolio-grid fade-in">
+    <div class="portfolio-item">
+      <img src="elegantweb.jpg" alt="Home Decor Website">
+      <div class="portfolio-overlay">
+        <div class="portfolio-tag">Web Design</div>
+        <div class="portfolio-title">Home Decor Website</div>
+        <a href="https://elegantspacesdecor.in" class="portfolio-link" target="_blank">Visit Site </a>
+      </div>
+    </div>
+    <div class="portfolio-item">
+      <img src="imdglobal.jpg" alt="UAE Travel Agency">
+      <div class="portfolio-overlay">
+        <div class="portfolio-tag">Web Design</div>
+        <div class="portfolio-title">UAE Travel Agency</div>
+        <a href="https://imdglobal.co.in/" class="portfolio-link" target="_blank">Visit Site </a>
+      </div>
+    </div>
+    <div class="portfolio-item">
+      <img src="chettayis.jpg" alt="Event Planners">
+      <div class="portfolio-overlay">
+        <div class="portfolio-tag">Web Design</div>
+        <div class="portfolio-title">Event Planners Website</div>
+        <a href="https://www.chettayisevent.in/" class="portfolio-link" target="_blank">Visit Site </a>
+      </div>
+    </div>
+    <div class="portfolio-item">
+      <img src="krishnaweb.jpg" alt="Jewellery Website">
+      <div class="portfolio-overlay">
+        <div class="portfolio-tag">Web Design</div>
+        <div class="portfolio-title">Jewellery Website</div>
+        <a href="https://krishnajeweller.co.in/" class="portfolio-link" target="_blank">Visit Site </a>
+      </div>
+    </div>
+    <div class="portfolio-item">
+      <img src="pathinaril.jpg" alt="Travel Agency">
+      <div class="portfolio-overlay">
+        <div class="portfolio-tag">Web Design</div>
+        <div class="portfolio-title">Travel Agency Website</div>
+        <a href="https://pathinariltravels.in/" class="portfolio-link" target="_blank">Visit Site </a>
+      </div>
+    </div>
+    <div class="portfolio-item">
+      <img src="mindpowertopics.jpg" alt="Brand Design">
+      <div class="portfolio-overlay">
+        <div class="portfolio-tag">Brand Design</div>
+        <div class="portfolio-title">Personal Website</div>
+        <a href="https://www.mindpowertopics.com/" class="portfolio-link" target="_blank">Visit Site </a>
+      </div>
     </div>
   </div>
 </section>
 
 
-
-
-
-
-  <!-- Services Section -->
-  <section id="services" class="services container">
-    <h2>Our Services</h2>
-    <div class="service-cards">
-      
-      <div class="card">
-        <div class="icon">💻</div>
-        <h3>Web Design & Development</h3>
-        <p>Modern, responsive websites designed to elevate your brand and drive results.</p>
-      </div>
-      <div class="card">
-        <div class="icon">🎨</div>
-        <h3>Brand Identity & Visual Design</h3>
-        <p>Creative visuals that build a strong and consistent brand identity.</p>
-      </div>
-    
-     <div class="card">
-        <div class="icon">📈</div>
-        <h3>Social Media Management</h3>
-        <p>Strategic content and management to grow your online presence.</p>
-      </div>
-      <div class="card">
-        <div class="icon">🌟</div>
-        <h3>Influencer Marketing & Collaborations</h3>
-        <p>Authentic influencer partnerships to boost reach and engagement.</p>
-      </div>
-
-       <div class="card">
-        <div class="icon">🎯</div>
-        <h3>High Performance Google & Meta Ads</h3>
-        <p>Data-driven campaigns focused on leads, conversions, and ROI.</p>
-      </div>
-
-      <div class="card">
-        <div class="icon">🎥</div>
-        <h3>Video Production</h3>
-        <p>Engaging video content that brings your brand story to life.</p>
-      </div>
-
-      <div class="card">
-        <div class="icon">🧲</div>
-        <h3>Client Outreach & Lead Generation</h3>
-        <p>Targeted outreach to connect with potential clients and generate leads.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Completed Websites -->
-  <section id="completed" class="completed container">
-    <h2>Completed Websites</h2>
-    <div class="folder-grid">
-       <div class="folder">
-        <img src="elegantweb.jpg" alt="Home decor website design">
-        <h3>Home Decor Website</h3>
-        <p>Site built with HTML, CSS, JS</p>
-        <a href="https://elegantspacesdecor.in" target="_blank" class="btn-secondary">View Site</a>
-      </div>
-       <div class="folder">
-        <img src="imdglobal.jpg" alt="Responsive travel agency website">
-        <h3>UAE Travel Agency</h3>
-        <p>Site built with HTML, CSS, JS</p>
-        <a href="https://imdglobal.co.in/" target="_blank" class="btn-secondary">View Site</a>
-      </div>
-      <div class="folder">
-        <img src="https://i.ibb.co/7tBWDZK6/Screenshot-20250607-140607-Samsung-Internet.jpg" alt="Responsive travel agency website">
-        <h3>Travel Agency</h3>
-        <p>Site built with HTML, CSS, JS</p>
-        <a href="https://tlightindia.com/" target="_blank" class="btn-secondary">View Site</a>
-      </div>
-      <div class="folder">
-        <img src="https://i.ibb.co/5h4zbKxt/Screenshot-20250607-162436-Samsung-Internet.jpg" alt="Industrial website designing">
-        <h3>Industrial Website</h3>
-        <p>Site built with Wordpress</p>
-        <a href="https://randmengineers.co.in/" target="_blank" class="btn-secondary">View Site</a>
-      </div>
-       <div class="folder">
-        <img src="chettayisweb.jpg" alt="Event Planners website designing">
-        <h3>Event Planners Website</h3>
-        <p>Site built with HTML, CSS, JS</p>
-        <a href="https://www.chettayisevent.in//" target="_blank" class="btn-secondary">View Site</a>
-      </div>
-
-        <div class="folder">
-        <img src="krishnajewellery.jpg" alt="Jewellery website designing">
-        <h3>Jewellery Website</h3>
-        <p>Site built with HTML, CSS, JS</p>
-        <a href="https://krishnajeweller.co.in/" target="_blank" class="btn-secondary">View Site</a>
-      </div>
-
-       <div class="folder">
-        <img src="pathinarilweb.jpg" alt="Travel Agency website designing">
-        <h3>Travel Agency Website</h3>
-        <p>Site built with HTML, CSS, JS</p>
-        <a href="https://pathinariltravels.in/" target="_blank" class="btn-secondary">View Site</a>
-      </div>
-      
-      
-    </div>
-  </section>
-
-  <!-- Works Section -->
+   <!-- Works Section -->
   <section id="works" class="works container">
-    <h2>Our Works</h2>
+   
 
 <section class="poster-gallery">
   <div class="poster-fan">
@@ -282,312 +286,312 @@ With 15+ satisfied clients and a steadily expanding portfolio, our focus remains
   </section>
 
 
-<section class="team">
-  <h2>Our Team</h2>
-
-  <div class="team-container">
-      
 
 
-    <div class="team-card">
-      <img src="anandhan.jpeg" alt="Anandhan Rajkumar">
-      <h3>Anandhan Rajkumar</h3>
-      <span>Founder & Creative Director</span>
-      <p>Leads Opulent Nexus with a strong vision for innovation and impactful brand storytelling.</p>
-    </div>
-
-    <div class="team-card">
-      <img src="fizzah.jpeg" alt="Fizzah">
-      <h3>Fizzah</h3>
-      <span>Brand & Visual Designer</span>
-      <p>Shapes brand identities through strategic and visually compelling design.</p>
-    </div>
-
-    <div class="team-card">
-      <img src="abhirami.jpeg" alt="Abhirami">
-      <h3>Abhirami M.R.</h3>
-      <span>Digital Engagement Strategist</span>
-      <p>Drives brand growth through content and social media strategies.</p>
-    </div>
-
-    <div class="team-card">
-      <img src="gopika.jpeg" alt="Gopika">
-      <h3>Gopika A.H.</h3>
-      <span>Performance Marketing Strategist</span>
-      <p>Executes data-driven campaigns across Google & Meta platforms.</p>
-    </div>
-
-    <div class="team-card">
-      <img src="aswin.jpg" alt="Aswin">
-      <h3>Aswin</h3>
-      <span>Visual Content Producer</span>
-      <p>Creates engaging visuals through video and photography.</p>
-    </div>
-
-    <div class="team-card">
-      <img src="akshay.jpeg" alt="Akshay">
-      <h3>Akshay R.</h3>
-      <span>Business Development Executive</span>
-      <p>Focuses on outreach, leads, and business growth.</p>
-    </div>
-
-
-  </div>
-</section>
-
-
-  <section id="testimonials" class="testimonials">
-  <h2>What Our Clients Say</h2>
-  <div class="testimonial-container">
-
+<!-- TESTIMONIALS -->
+<section class="section testimonials-bg" id="testimonials">
+     <p class="section-label" style="justify-content:center">Client Voices</p>
+<h2 class="fade-in" style="
+font-family:'Cormorant Garamond', Georgia, serif;
+font-size:clamp(2.5rem,5vw,4rem);
+font-weight:400;
+letter-spacing:-0.02em;
+margin-top:0.5rem;
+text-align:center;
+color:#111111;">
+    Words from those we've <em style='color:#777777;font-style:italic;'>Served!</em> 
+</h2>
+  <div class="testimonials-grid fade-in">
     <div class="testimonial-card">
-      <p class="review">“Opulent delivered exceptional quality and timely project completion.”</p>
-      <div class="client-info">
-        <strong>Rajkumar G</strong>
-        <span>CEO of R&M Engineers And Services (P) Ltd.</span>
-      </div>
+      <p class="testimonial-text">Opulent delivered exceptional quality and timely project completion.</p>
+      <div class="testimonial-author">Rajkumar G</div>
+      <div class="testimonial-role">CEO, R&amp;M Engineers And Services</div>
     </div>
-
     <div class="testimonial-card">
-      <p class="review">“Opulent Web Developers boosted our online visibility & bookings!”</p>
-      <div class="client-info">
-        <strong>Padmakumar</strong>
-        <span>Proprietor, Swagath Houseboats</span>
-      </div>
+      <p class="testimonial-text">Opulent Nexus boosted our online visibility and bookings dramatically.</p>
+      <div class="testimonial-author">Padmakumar</div>
+      <div class="testimonial-role">Proprietor, Swagath Houseboats</div>
     </div>
-
-
-     <div class="testimonial-card">
-      <p class="review">“Opulent Nexus delivered exactly what we envisioned—creative, professional, and detail-focused. The logo perfectly reflects Fortlark’s identity. Highly recommended.”</p>
-      <div class="client-info">
-        <strong>Vishnu Das</strong>
-        <span>Managing Director, Fortlark FT Pvt Ltd</span>
-      </div>
+    <div class="testimonial-card">
+      <p class="testimonial-text">Creative, professional, and detail-focused. The logo perfectly reflects Fortlark's identity. Highly recommended.</p>
+      <div class="testimonial-author">Vishnu Das</div>
+      <div class="testimonial-role">Managing Director, Fortlark FT Pvt Ltd</div>
     </div>
-
-     <div class="testimonial-card">
-      <p class="review">“Opulent Nexus created a powerful brand identity that truly reflects our vision. Creative, responsive, and highly professional.”</p>
-      <div class="client-info">
-        <strong>Devan</strong>
-        <span>Founder, Sanctum Brook</span>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-
-<section class="blog-section" id="blog">
-  <div class="container">
-    <h2 class="section-title">Latest Blogs</h2>
-    <div class="blog-grid">
-      
-      <div class="blog-card">
-        <img src="blog1.jpg" alt="Design Trends You Can’t Ignore">
-        <div class="blog-content">
-          <h3>5 Design Trends You Can’t Ignore</h3>
-          <p>Explore the latest digital design trends that are reshaping user experiences across industries.</p>
-          <a href="/5designtrends/" class="read-more">Read More →</a>
-        </div>
-      </div>
-      
-      <div class="blog-card">
-        <img src="blog2.jpeg" alt="Branding Essentials for Startups">
-        <div class="blog-content">
-          <h3>Branding Essentials for Startups</h3>
-          <p>Learn how to craft a consistent brand identity that connects with your target audience.</p>
-          <a href="/branding/" class="read-more">Read More →</a>
-        </div>
-      </div>
-      
-      <div class="blog-card">
-        <img src="blog3.avif" alt="SEO Myths">
-        <div class="blog-content">
-          <h3>SEO Myths Busted in 2025</h3>
-          <p>We separate fact from fiction and give you a clear strategy to improve rankings in 2025.</p>
-          <a href="/SEOmyths/" class="read-more">Read More →</a>
-        </div>
-      </div>
-
+    <div class="testimonial-card">
+      <p class="testimonial-text">They created a powerful brand identity that truly reflects our vision — responsive and highly professional throughout.</p>
+      <div class="testimonial-author">Devan</div>
+      <div class="testimonial-role">Founder, Sanctum Brook</div>
     </div>
   </div>
 </section>
 
+<!-- TEAM -->
+<section class="section" id="team">
+     <p class="section-label" style="justify-content:center">The Team</p>
+<h2 class="fade-in" style="
+font-family:'Cormorant Garamond', Georgia, serif;
+font-size:clamp(2.5rem,5vw,4rem);
+font-weight:400;
+letter-spacing:-0.02em;
+margin-top:0.5rem;
+text-align:center;
+color:#111111;">
+    The <em style='color:#777777;font-style:italic;'>minds</em> behind the work
+</h2>
+  <div class="team-grid fade-in">
+    <div class="team-member">
+      <div class="team-photo-wrap">
+        <img src="anandhan.jpeg" alt="Anandhan Rajkumar" class="team-photo">
+      </div>
+      <div class="team-name">Anandhan Rajkumar</div>
+      <div class="team-role">Founder &amp; Creative Director</div>
+    </div>
+    <div class="team-member">
+      <div class="team-photo-wrap">
+        <img src="fizzah.jpeg" alt="Fizzah" class="team-photo">
+      </div>
+      <div class="team-name">Fizzah</div>
+      <div class="team-role">Brand &amp; Visual Designer</div>
+    </div>
+    <div class="team-member">
+      <div class="team-photo-wrap">
+        <img src="abhirami.jpeg" alt="Abhirami M.R." class="team-photo">
+      </div>
+      <div class="team-name">Abhirami M.R.</div>
+      <div class="team-role">Digital Engagement Strategist</div>
+    </div>
+    <div class="team-member">
+      <div class="team-photo-wrap">
+        <img src="gopika.jpeg" alt="Gopika A.H." class="team-photo">
+      </div>
+      <div class="team-name">Gopika A.H.</div>
+      <div class="team-role">Performance Marketing</div>
+    </div>
+    <div class="team-member">
+      <div class="team-photo-wrap">
+        <img src="aswin.jpg" alt="Aswin" class="team-photo">
+      </div>
+      <div class="team-name">Aswin</div>
+      <div class="team-role">Visual Content Producer</div>
+    </div>
+    <div class="team-member">
+      <div class="team-photo-wrap">
+        <img src="akshay.jpeg" alt="Akshay R." class="team-photo">
+      </div>
+      <div class="team-name">Akshay R.</div>
+      <div class="team-role">Business Development</div>
+    </div>
+  </div>
+</section>
 
 
 
-  <!-- Contact Section -->
-  <section id="contact" class="contact container">
-    <h2>Contact Us!</h2>
-    <p>Ready to start your project? Get in touch!</p>
-    <form id="contact-form" action="https://formspree.io/f/xpwrqnrk" method="POST">
-      <input type="email" name="email" placeholder="Your email" required />
-      <textarea name="message" placeholder="Your message" required></textarea>
-      <button type="submit">Send</button>
-    </form>
-
-    <div id="response-message" style="display:none; margin-top:10px;"></div>
-
-
-
-<footer class="site-footer">
-  <div class="footer-container">
-    <div class="footer-col logo-col">
-      <h2 class="logo1">Opulent Nexus</h2>
-      <p class="footer-description">
-        Designing Your Digital Dreams.  
-      </p>
-      <div class="social-icons">
-        <a href="https://m.facebook.com/profile.php?id=61565579356114"><i class="fab fa-facebook-f"></i></a>
-          <a href="https://www.instagram.com/opulent_nexus?igsh=MWpodWl2dTJxMnp4cw==" target="_blank" rel="noopener noreferrer">
-  <i class="fab fa-instagram"></i>
-</a>
-        <a href="https://wa.me/+916235355402"><i class="fab fa-whatsapp"></i></a>
+<!-- CONTACT -->
+<section class="section contact-bg" id="contact">
+  <p class="section-label">Get in Touch</p>
+  <div class="contact-grid">
+    <div class="contact-info fade-in">
+      <h2>Let's build something <em>exceptional</em> together</h2>
+      <div class="gold-divider"></div>
+      <p>Ready to transform your digital presence? Share your vision and we'll craft a strategy that delivers real impact.</p>
+      <div class="contact-detail">
+        <div class="contact-detail-icon">✦</div>
+        <div class="contact-detail-text">First Floor, Mundackal Bldgs, Kalarcode<br>Alappuzha, Kerala — 688003</div>
+      </div>
+      <div class="contact-detail">
+        <div class="contact-detail-icon">✦</div>
+        <div class="contact-detail-text">info@opulentnexus.co.in</div>
+      </div>
+      <div class="contact-detail">
+        <div class="contact-detail-icon">✦</div>
+        <div class="contact-detail-text">+91 6235 355 402 · +91 9400 994 945</div>
       </div>
     </div>
+    <div class="contact-form fade-in">
+      <div class="form-group">
+        <label class="form-label">Your Name</label>
+        <input type="text" class="form-input" placeholder="Full name">
+      </div>
+      <div class="form-group">
+        <label class="form-label">Email Address</label>
+        <input type="email" class="form-input" placeholder="your@email.com">
+      </div>
+      <div class="form-group">
+        <label class="form-label">Service Interested In</label>
+        <input type="text" class="form-input" placeholder="e.g. Website Design, Branding…">
+      </div>
+      <div class="form-group">
+        <label class="form-label">Your Message</label>
+        <textarea class="form-textarea" placeholder="Tell us about your project…"></textarea>
+      </div>
+      <button onclick="sendToWhatsApp()" class="btn-primary"
+style="
+width:100%;
+border:none;
+padding:1.15rem;
+cursor:pointer;
 
-    <div class="footer-col">
-      <h4>Address</h4>
-      <p>First floor Mundackal Bldgs,<br>Kalarcode, Alappuzha,<br>Pin: 688003</p>
+background:linear-gradient(135deg,#111111,#2b2b2b);
+color:#ffffff;
+
+font-size:0.8rem;
+font-weight:600;
+
+letter-spacing:0.18em;
+text-transform:uppercase;
+
+border-radius:14px;
+
+box-shadow:0 12px 30px rgba(0,0,0,.15);
+
+transition:all .3s ease;
+">
+    Send Message 
+</button>
     </div>
+  </div>
+</section>
 
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <div class="logo"><em>Opulent</em> Nexus</div>
+      <p>Designing your digital dreams from Alappuzha, Kerala — for brands that refuse to be ordinary.</p>
+    </div>
     <div class="footer-col">
-      <h4>Quick Links</h4>
+      <h4>Services</h4>
       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#completed">Works</a></li>
-        <li><a href="#testimonials">Feedback</a></li>
+        <li><a href="#services">Web Development</a></li>
+        <li><a href="#services">Brand Identity</a></li>
+        <li><a href="#services">Social Media</a></li>
+        <li><a href="#services">Performance Ads</a></li>
+        <li><a href="#services">Video Production</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#team">Our Team</a></li>
+        <li><a href="#works">Portfolio</a></li>
+      
         <li><a href="#contact">Contact</a></li>
       </ul>
     </div>
-
     <div class="footer-col">
-      <h4>Contact Us</h4>
-      <p>Email: info@opulentnexus.co.in</p>
-      <p>Phone: +91 6235355402  
-       <br> +91 9400994945 </br>
-      </p>
-    </div>
-
-    <div class="footer-col keywords">
-      <h4></h4>
-      <p>    Digital Marketing, Social Media Marketing, Logo Design, SEO Services, Google Ads, Facebook Marketing, Poster Design, Online Marketing, Email Marketing, Post Design, Digital Advertising, Brochure Design, Business Branding, Web Maintenance, Website Redesign, Responsive Web Design, Custom Website Design, Landing Page Design,  Marketing Strategy</p>
+      <h4>Contact</h4>
+      <p>Kalarcode, Alappuzha<br>Kerala — 688003<br><br>+91 6235 355 402<br>info@opulentnexus.co.in</p>
     </div>
   </div>
-
   <div class="footer-bottom">
-    <p>© 2026 Opulentnexus. All Rights Reserved.</p>
+    <p>© 2026 Opulent Nexus. All rights reserved.</p>
+   <div class="social-links">
+
+    <a href="https://m.facebook.com/profile.php?id=61565579356114"
+       class="social-link"
+       target="_blank">
+       <i class="fab fa-facebook-f"></i>
+    </a>
+
+    <a href="https://www.instagram.com/opulent_nexus"
+       class="social-link"
+       target="_blank">
+       <i class="fab fa-instagram"></i>
+    </a>
+
+    <a href="https://wa.me/916235355402"
+       class="social-link"
+       target="_blank">
+       <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <a href="https://in.linkedin.com/in/anandhan-rajkumar-2153461aa"
+       class="social-link"
+       target="_blank">
+       <i class="fab fa-linkedin-in"></i>
+    </a>
+
+</div>
   </div>
 </footer>
 
-
-
-
-
-    <script>
-      const form = document.getElementById('contact-form');
-      const responseMessage = document.getElementById('response-message');
-
-      form.addEventListener('submit', function(event) {
-        event.preventDefault();
-        const formData = new FormData(form);
-
-        fetch(form.action, {
-          method: 'POST',
-          body: formData,
-          headers: { 'Accept': 'application/json' }
-        }).then(response => {
-          if (response.ok) {
-            responseMessage.style.display = 'block';
-            responseMessage.style.color = 'green';
-            responseMessage.textContent = 'Thanks for your message! We will get back to you soon.';
-            form.reset();
-          } else {
-            response.json().then(data => {
-              responseMessage.style.display = 'block';
-              responseMessage.style.color = 'red';
-              if (data.errors) {
-                responseMessage.textContent = data.errors.map(e => e.message).join(", ");
-              } else {
-                responseMessage.textContent = 'Oops! There was a problem submitting your form.';
-              }
-            });
-          }
-        }).catch(() => {
-          responseMessage.style.display = 'block';
-          responseMessage.style.color = 'red';
-          responseMessage.textContent = 'Oops! There was a problem submitting your form.';
-        });
-      });
-    </script>
-  </section>
-
+<script src="script.js"></script>
 
 <script>
-  document.addEventListener("DOMContentLoaded", () => {
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("about-animate");
-        }
-      });
-    }, {
-      threshold: 0.3
-    });
+function sendToWhatsApp() {
 
-    const aboutSection = document.querySelector('.about-us');
-    const aboutText = document.querySelector('.about-text');
-    
-    observer.observe(aboutSection);
-    observer.observe(aboutText);
-  });
+    const inputs = document.querySelectorAll('.form-input');
+    const textarea = document.querySelector('.form-textarea');
+
+    const name = inputs[0].value;
+    const email = inputs[1].value;
+    const service = inputs[2].value;
+    const message = textarea.value;
+
+    const whatsappMessage =
+`*New Website Inquiry*
+
+👤 Name: ${name}
+
+📧 Email: ${email}
+
+🛠 Service: ${service}
+
+💬 Message:
+${message}`;
+
+    const phoneNumber = "916235355402";
+
+    const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(whatsappMessage)}`;
+
+    window.open(url, "_blank");
+}
 </script>
 
+
 <script>
-  document.addEventListener("DOMContentLoaded", () => {
-    const serviceCards = document.querySelectorAll(".card");
+document.addEventListener("DOMContentLoaded", () => {
+
+    const elements = document.querySelectorAll(
+        '.about-text, .founder-card, .service-item, .portfolio-item, .testimonial-card, .team-member, .contact-info, .contact-form, .works-header, .services-header'
+    );
+
+    elements.forEach(el => {
+
+        el.style.opacity = "0";
+        el.style.transform = "translateY(40px)";
+        el.style.filter = "blur(6px)";
+        el.style.transition =
+            "opacity 0.7s ease-out, transform 0.7s ease-out, filter 0.7s ease-out";
+
+    });
 
     const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry, index) => {
-        if (entry.isIntersecting) {
-          // Add staggered delay
-          setTimeout(() => {
-            entry.target.classList.add("scroll-in");
-          }, index * 120); // Adjust delay (120ms between cards)
-          observer.unobserve(entry.target);
-        }
-      });
+
+        entries.forEach(entry => {
+
+            if (entry.isIntersecting) {
+
+                entry.target.style.opacity = "1";
+                entry.target.style.transform = "translateY(0)";
+                entry.target.style.filter = "blur(0)";
+
+                observer.unobserve(entry.target);
+            }
+
+        });
+
     }, {
-      threshold: 0.2
+        threshold: 0.12
     });
 
-    serviceCards.forEach(card => observer.observe(card));
-  });
+    elements.forEach(el => observer.observe(el));
+
+});
 </script>
 
 
-
-
-<script>
-  document.addEventListener("DOMContentLoaded", () => {
-    const targets = document.querySelectorAll(".completed, .folder-grid");
-
-    const observer = new IntersectionObserver((entries, observer) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("scroll-in");
-          observer.unobserve(entry.target); // only animate once
-        }
-      });
-    }, {
-      threshold: 0.1,
-      rootMargin: "0px 0px -100px 0px" // Triggers animation 100px before fully entering
-    });
-
-    targets.forEach(target => observer.observe(target));
-  });
-</script>
 
 
 <script>
@@ -637,170 +641,27 @@ With 15+ satisfied clients and a steadily expanding portfolio, our focus remains
 </script>
 
 
-<script>
-  document.addEventListener("DOMContentLoaded", () => {
-    const testimonialItems = [
-      document.querySelector(".testimonials h2"),
-      ...document.querySelectorAll(".testimonial-container > *")
-    ];
-
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry, index) => {
-        if (entry.isIntersecting) {
-          setTimeout(() => {
-            entry.target.classList.add("scroll-in");
-          }, index * 120); // stagger effect
-          observer.unobserve(entry.target);
-        }
-      });
-    }, {
-      threshold: 0.2
-    });
-
-    testimonialItems.forEach(item => {
-      if (item) observer.observe(item);
-    });
-  });
-</script>
 
 
 <script>
-  document.addEventListener("DOMContentLoaded", () => {
-    const animatedHeadings = document.querySelectorAll(".services h2");
+document.addEventListener("DOMContentLoaded", function(){
 
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("scroll-in");
-          observer.unobserve(entry.target);
-        }
-      });
-    }, {
-      threshold: 0.3
+    const menuToggle = document.querySelector(".menu-toggle");
+    const navLinks = document.querySelector(".nav-links");
+
+    menuToggle.addEventListener("click", function(){
+
+        menuToggle.classList.toggle("active");
+        navLinks.classList.toggle("active");
+
     });
 
-    animatedHeadings.forEach(el => observer.observe(el));
-  });
-</script>
-
-
-<script>
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("scroll-in");
-        observer.unobserve(entry.target); // Remove if you want it to animate only once
-      }
-    });
-  }, {
-    threshold: 0.2
-  });
-
-  // Animate heading
-  const heading = document.querySelector(".section-title");
-  if (heading) observer.observe(heading);
-
-  // Animate each blog card
-  document.querySelectorAll(".blog-card").forEach(card => {
-    observer.observe(card);
-  });
-</script>
-
-
-
-
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const cards = document.querySelectorAll(".poster-card");
-
-    const observer = new IntersectionObserver(
-      (entries, observer) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            entry.target.style.animationPlayState = "running";
-            observer.unobserve(entry.target); // animate only once
-          }
-        });
-      },
-      {
-        threshold: 0.4, // trigger when 40% visible
-      }
-    );
-
-    cards.forEach(card => {
-      // Start paused so it won't play before scrolling
-      card.style.animationPlayState = "paused";
-      observer.observe(card);
-    });
-  });
-</script>
-
-
-
-<script>
-  const cards = document.querySelectorAll('.profile-card');
-
-  const isInViewport = (el) => {
-    const rect = el.getBoundingClientRect();
-    return (
-      rect.top <= (window.innerHeight || document.documentElement.clientHeight) - 100
-    );
-  };
-
-  const revealOnScroll = () => {
-    cards.forEach(card => {
-      if (isInViewport(card)) {
-        card.classList.add('animate-visible');
-      }
-    });
-  };
-
-  window.addEventListener('scroll', revealOnScroll);
-  window.addEventListener('load', revealOnScroll);
-</script>
-
-
-
-
-
-
-
-<style>
-  html {
-    scroll-behavior: smooth;
-  }
-</style>
-
-
-</body>
-</html>
-<script>
- function toggleMenu() {
-  document.getElementById('navMenu').classList.toggle('show');
-}
-
-// Close menu when clicking a link
-document.addEventListener("DOMContentLoaded", () => {
-  const navMenu = document.getElementById('navMenu');
-  const menuLinks = navMenu.querySelectorAll("a");
-
-  menuLinks.forEach(link => {
-    link.addEventListener("click", () => {
-      navMenu.classList.remove("show");
-    });
-  });
 });
-
 </script>
 
 
 
-
-
-
-
-
-
+</html>
 
 
 
