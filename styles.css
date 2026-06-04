@@ -914,6 +914,96 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1.2rem 3rem;display:
         font-size:.9rem;
     }
 }
+
+/* ========================================
+   MORE DETAILS BUTTON
+======================================== */
+
+.service-btn{
+    margin-top:25px;
+
+    background:#111;
+    color:#fff;
+
+    border:none;
+    border-radius:12px;
+
+    padding:12px 22px;
+
+    font-size:.9rem;
+    font-weight:600;
+     font-family:'Inter',sans-serif;
+
+    cursor:pointer;
+
+    transition:.3s ease;
+}
+
+.service-btn:hover{
+    background:#000;
+    transform:translateY(-2px);
+}
+
+/* ========================================
+   HIDDEN DETAILS
+======================================== */
+
+.service-details{
+    max-height:0;
+    overflow:hidden;
+
+    opacity:0;
+
+    transition:
+        max-height .5s ease,
+        opacity .4s ease,
+        margin-top .4s ease;
+
+    margin-top:0;
+}
+
+.service-item.active .service-details{
+    max-height:500px;
+    opacity:1;
+    margin-top:30px;
+}
+
+/* ========================================
+   DETAILS CONTENT
+======================================== */
+
+.service-details h4{
+    font-size:1.2rem;
+    color:#111;
+    margin-bottom:15px;
+}
+
+.service-details p{
+    color:#666;
+    line-height:1.8;
+    margin-bottom:20px;
+}
+
+.service-details h5{
+    font-size:1rem;
+    margin-bottom:15px;
+    color:#111;
+}
+
+.service-details ul{
+    list-style:none;
+    padding:0;
+}
+
+.service-details ul li{
+    padding:8px 0;
+    color:#444;
+    border-bottom:1px solid #eee;
+}
+
+
+
+
 /* =========================
    PORTFOLIO SECTION
 ========================= */
@@ -1380,6 +1470,174 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1.2rem 3rem;display:
     }
 }
 
+
+/* ==========================
+   PLUS BUTTON
+========================== */
+
+.team-member{
+    position:relative;
+}
+
+.team-info-btn{
+    position:absolute;
+    top:15px;
+    right:15px;
+
+    width:40px;
+    height:40px;
+
+    border:none;
+    border-radius:50%;
+
+    background:#111;
+    color:#fff;
+
+    font-size:24px;
+    font-weight:300;
+
+    cursor:pointer;
+
+    transition:.3s ease;
+
+    z-index:10;
+}
+
+.team-info-btn:hover{
+    transform:rotate(90deg);
+}
+
+/* ==========================
+   MODAL
+========================== */
+
+.team-modal{
+    position:fixed;
+    inset:0;
+
+    background:rgba(0,0,0,.7);
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    opacity:0;
+    visibility:hidden;
+
+    transition:.4s ease;
+
+    z-index:9999;
+}
+
+.team-modal.show{
+    opacity:1;
+    visibility:visible;
+}
+
+.team-modal-content{
+    background:#fff;
+
+    width:90%;
+    max-width:650px;
+
+    padding:40px;
+
+    border-radius:24px;
+
+    text-align:center;
+
+    position:relative;
+
+    animation:popup .4s ease;
+}
+
+@keyframes popup{
+    from{
+        transform:translateY(30px);
+        opacity:0;
+    }
+    to{
+        transform:translateY(0);
+        opacity:1;
+    }
+}
+
+.team-modal-content img{
+    width:120px;
+    height:120px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+    margin-bottom:20px;
+}
+
+.team-modal-content h3{
+    font-size:2rem;
+    margin-bottom:10px;
+}
+
+.modal-role{
+    display:inline-block;
+
+    padding:10px 20px;
+
+    background:#000000;
+
+    border-radius:50px;
+
+    margin-bottom:25px;
+
+    font-size:.8rem;
+    letter-spacing:.1em;
+    text-transform:uppercase;
+}
+
+.team-modal-content p{
+    line-height:1.9;
+    color:#555;
+}
+
+.team-modal-content blockquote{
+    margin-top:25px;
+
+    font-style:italic;
+
+    font-size:1.1rem;
+
+    color:#111;
+}
+
+.team-close{
+    position:absolute;
+    top:15px;
+    right:25px;
+
+    font-size:35px;
+    cursor:pointer;
+}
+
+
+
+.team-close-btn{
+    position:absolute;
+    top:15px;
+    right:15px;
+
+    background:none !important;
+    border:none !important;
+
+    color:#000 !important;
+
+    font-size:32px;
+    font-weight:700;
+    line-height:1;
+
+    cursor:pointer;
+
+    z-index:99999;
+}
 
 
 /* CONTACT */
