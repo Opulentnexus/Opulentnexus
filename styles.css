@@ -304,7 +304,8 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1.2rem 3rem;display:
 }
 
 .hero-stat .num{
-    font-family: 'Inter', sans-serif;
+    font-family: "Share Tech", sans-serif;
+
     font-size:3rem;
     font-weight:300;
     line-height:1;
