@@ -927,7 +927,39 @@ document.addEventListener("DOMContentLoaded", function(){
 </div>
 
 
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const cards = document.querySelectorAll(".poster-card");
 
+  // Pause existing CSS animations
+  cards.forEach(card => {
+    card.style.animationPlayState = "paused";
+  });
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        cards.forEach((card, index) => {
+          setTimeout(() => {
+            card.style.animationPlayState = "running";
+          }, index * 100);
+        });
+
+        observer.unobserve(entry.target);
+      }
+    });
+  }, {
+    threshold: 0.2
+  });
+
+  const posterSection = document.querySelector(".poster-gallery");
+  if (posterSection) observer.observe(posterSection);
+});
+</script>
+
+
+
+  
 
 </body>
 </html>
